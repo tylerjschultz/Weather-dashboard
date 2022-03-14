@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="title-bar">
+        <h1> Weather Dashboard</h1>
+    </header>
+    <main>
+        <section class="city-div">
+            <div class="city-search-form">
+                <h2 class="section-title">Search for a City:</h2>
+                <form id="city-form" class="search-form">
+                    <input name="city-search" id="city-search" type="text" autofocus="true" />
+                    <button type="submit" class="submit-btn">Search</button>
+                </form>
+            </div>
+            
+            <div class="city-buttons">
+                <ul id="search-buttons-list"></ul>
+            </div>
+
+        </section>
+
+        <section class="weather-div">
+            <div class="current-weather">
+                <div class="current-city-date">
+                    <h2 id="city-date"></h2><img id="wicon" src="" alt="Weather icon" style="display: none;">
+                </div>
+                
+                <p id="current-temp">Temp:</p>
+                <p id="current-wind">Wind:</p>
+                <p id="current-humidity">Humidity</p>
+                <div id ="current-uvi-div">
+                    <p>UV Index: </p>
+                    <div id="uvi"><p id="current-uvi"></p></div>
+                </div>
+                
+            </div>
+
+            <div class="five-day-forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="daily-forecast">
+                    <div class="day-div day-1">
+                        <h4 id="day-1-date">Date</h4>
+                        <img id="wicon-1" src="" alt="Weather icon" style="display: none;">
+                        <p id="day-1-temp">Temp:</p>
+                        <p id="day-1-wind">Wind:</p>
+                        <p id="day-1-humidity">Humidity:</p>
+                    </div>
+                    <div class="day-div day-2">
+                        <h4 id="day-2-date">Date</h4>
+                        <img id="wicon-2" src="" alt="Weather icon" style="display: none;">
+                        <p id="day-2-temp">Temp:</p>
+                        <p id="day-2-wind">Wind:</p>
+                        <p id="day-2-humidity">Humidity:</p>
+                    </div>
+                    <div class="day-div day-3">
+                        <h4 id="day-3-date">Date</h4>
+                        <img id="wicon-3" src="" alt="Weather icon" style="display: none;">
+                        <p id="day-3-temp">Temp:</p>
+                        <p id="day-3-wind">Wind:</p>
+                        <p id="day-3-humidity">Humidity:</p>
+                    </div>
+                    <div class="day-div day-4">
+                        <h4 id="day-4-date">Date</h4>
+                        <img id="wicon-4" src="" alt="Weather icon" style="display: none;">
+                        <p id="day-4-temp">Temp:</p>
+                        <p id="day-4-wind">Wind:</p>
+                        <p id="day-4-humidity">Humidity:</p>
+                    </div>
+                    <div class="day-div day-5">
+                        <h4 id="day-5-date">Date</h4>
+                        <img id="wicon-5" src="" alt="Weather icon" style="display: none;">
+                        <p id="day-5-temp">Temp:</p>
+                        <p id="day-5-wind">Wind:</p>
+                        <p id="day-5-humidity">Humidity:</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

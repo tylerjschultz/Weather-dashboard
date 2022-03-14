@@ -1,0 +1,112 @@
+
+.title-bar {
+    background: rgb(85,133,241);
+    background: linear-gradient(90deg, rgba(85,133,241,1) 0%, rgba(38,0,83,1) 100%);
+}
+
+.title-bar h1 {
+    color:white;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+.city-div {
+    flex: 1 1 20%;
+}
+
+.city-search-form {
+    border-bottom: black 2px solid;
+    padding: 10px;
+}
+
+.city-search-form h2 {
+    margin-top: 5px;
+}
+
+input {
+    width: 95%;
+    margin: 5px;
+    height: 30px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    width: 95%;
+    margin: 5px;
+    height: 30px;
+    padding: 0;
+    background-color: turquoise;
+    color: white;
+    border-radius: 5px;
+}
+
+#search-buttons-list {
+    padding: 10px;
+    margin: 0;
+}
+
+.city-search-btn {
+    width: 95%;
+    margin: 5px;
+    height: 30px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.weather-div {
+    flex: 3 2 70%;
+    padding: 20px;
+}
+
+.current-weather {
+    border: black 2px solid;
+    padding: 5px;
+}
+.daily-forecast {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.day-div {
+    background-color: rgb(73, 85, 126);
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    width: 20%;
+    
+}
+
+.current-city-date {
+    display: inline-flex;
+}
+
+#current-uvi-div {
+    display: inline-flex;
+}
+
+#current-uvi-div p {
+    margin: 0;
+}
+
+.favorable {
+    background-color: green;
+    color: white;
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.severe {
+    background-color: red;
+    color: white;
+}
+
+#uvi {
+    padding: 0 10px;   
+}
